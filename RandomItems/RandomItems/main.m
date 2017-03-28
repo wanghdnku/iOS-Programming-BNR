@@ -14,23 +14,23 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSMutableArray *items = [[NSMutableArray alloc] init];
         
-        /*
+        
         for (int i = 0; i < 10; i++) {
             // 使用了快捷方法，并非自己持有。（快捷方法创建对象会被放到autoreleasepool?）
             BNRItem *item = [BNRItem randomItem];
             [items addObject:item];
         }
-        */
-         
-        BNRItem *backpack = [[BNRItem alloc] initWithItemName:@"Backpack"];
-        [items addObject:backpack];
-        BNRItem *calculator = [[BNRItem alloc] initWithItemName:@"Calculator"];
-        [items addObject:calculator];
         
-        backpack.containedItem = calculator;
         
-        backpack = nil;
-        calculator = nil;
+//        BNRItem *backpack = [[BNRItem alloc] initWithItemName:@"Backpack"];
+//        [items addObject:backpack];
+//        BNRItem *calculator = [[BNRItem alloc] initWithItemName:@"Calculator"];
+//        [items addObject:calculator];
+//        
+//        backpack.containedItem = calculator;
+//        
+//        backpack = nil;
+//        calculator = nil;
         
         for (BNRItem *item in items) {
             NSLog(@"%@", item);
@@ -41,8 +41,9 @@ int main(int argc, const char * argv[]) {
         items = nil;
         //sleep(10);
         NSLog(@"All items has been desdroyed");
-        sleep(10);
         
     }
+    NSLog(@"Hello, autoreleasepool ended!");
+    
     return 0;
 }

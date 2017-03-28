@@ -11,6 +11,9 @@
 
 @implementation BNRItem
 
+@synthesize containedItem = _containedItem;
+@synthesize container = _container;
+
 // 类方法
 
 + (instancetype)randomItem {
@@ -62,32 +65,6 @@
     NSLog(@"Destroyed: %@", self.itemName);
 }
 
-
-
-- (void)setItemName:(NSString *)str {
-    _itemName = str;
-}
-- (NSString *)itemName {
-    return _itemName;
-}
-
-- (void)setSerialNumber:(NSString *)str {
-    _serialNumber = str;
-}
-- (NSString *)serialNumber {
-    return _serialNumber;
-}
-
-- (void)setValueInDollars:(int)v {
-    _valueInDollars = v;
-}
-- (int)valueInDollars {
-    return _valueInDollars;
-}
-
-- (NSDate *)dateCreated {
-    return _dateCreated;
-}
 
 - (void)setContainedItem:(BNRItem *)item {
     _containedItem = item;

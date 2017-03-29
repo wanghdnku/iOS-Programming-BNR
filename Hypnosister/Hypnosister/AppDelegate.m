@@ -21,9 +21,32 @@
     UIViewController *vc = [[UIViewController alloc] init];
     [self.window setRootViewController:vc];
     
+    
+    /*
     CGRect firstFrame = self.window.bounds;
     BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
     [self.window.rootViewController.view addSubview:firstView];
+    */
+    
+    CGRect screenRect = self.window.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
+    //bigRect.size.height *= 2.0;
+    
+    // 创建一个UIScrollView
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    // 镜头与子视图边缘对齐
+    scrollView.pagingEnabled = YES;
+    [self.window.rootViewController.view addSubview:scrollView];
+    // 创建一个大尺寸BNRHypnosisView对象并加入UIScrollView
+    BNRHypnosisView *hypnosisView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:hypnosisView];
+    // 创建第二个BNRHypnosisView
+    screenRect.origin.x += screenRect.size.width;
+    BNRHypnosisView *anotherView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:anotherView];
+    scrollView.contentSize = bigRect.size;
+    
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

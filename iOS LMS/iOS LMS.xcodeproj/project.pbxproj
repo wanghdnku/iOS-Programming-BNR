@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCA662821E8E03DA0007E370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA662811E8E03DA0007E370 /* main.m */; };
+		BCA6628D1E8E04200007E370 /* WHDUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6628C1E8E04200007E370 /* WHDUserInfo.m */; };
+		BCA662901E8E04720007E370 /* WHDUserOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6628F1E8E04720007E370 /* WHDUserOperation.m */; };
+		BCA662931E8E04840007E370 /* WHDLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA662921E8E04840007E370 /* WHDLoginService.m */; };
+		BCA662961E8E049D0007E370 /* WHDLearningService.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA662951E8E049D0007E370 /* WHDLearningService.m */; };
+		BCA6629A1E8E07F90007E370 /* WHDLearningManagementSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA662991E8E07F90007E370 /* WHDLearningManagementSystem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCA6627C1E8E03DA0007E370 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BCA6627E1E8E03DA0007E370 /* iOS LMS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "iOS LMS"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA662811E8E03DA0007E370 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCA6628B1E8E04200007E370 /* WHDUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDUserInfo.h; sourceTree = "<group>"; };
+		BCA6628C1E8E04200007E370 /* WHDUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDUserInfo.m; sourceTree = "<group>"; };
+		BCA6628E1E8E04720007E370 /* WHDUserOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDUserOperation.h; sourceTree = "<group>"; };
+		BCA6628F1E8E04720007E370 /* WHDUserOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDUserOperation.m; sourceTree = "<group>"; };
+		BCA662911E8E04840007E370 /* WHDLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDLoginService.h; sourceTree = "<group>"; };
+		BCA662921E8E04840007E370 /* WHDLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDLoginService.m; sourceTree = "<group>"; };
+		BCA662941E8E049D0007E370 /* WHDLearningService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDLearningService.h; sourceTree = "<group>"; };
+		BCA662951E8E049D0007E370 /* WHDLearningService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDLearningService.m; sourceTree = "<group>"; };
+		BCA662981E8E07F90007E370 /* WHDLearningManagementSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDLearningManagementSystem.h; sourceTree = "<group>"; };
+		BCA662991E8E07F90007E370 /* WHDLearningManagementSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDLearningManagementSystem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCA6627B1E8E03DA0007E370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCA662751E8E03DA0007E370 = {
+			isa = PBXGroup;
+			children = (
+				BCA662801E8E03DA0007E370 /* iOS LMS */,
+				BCA6627F1E8E03DA0007E370 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCA6627F1E8E03DA0007E370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA6627E1E8E03DA0007E370 /* iOS LMS */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA662801E8E03DA0007E370 /* iOS LMS */ = {
+			isa = PBXGroup;
+			children = (
+				BCA662811E8E03DA0007E370 /* main.m */,
+				BCA662981E8E07F90007E370 /* WHDLearningManagementSystem.h */,
+				BCA662991E8E07F90007E370 /* WHDLearningManagementSystem.m */,
+				BCA6628B1E8E04200007E370 /* WHDUserInfo.h */,
+				BCA6628C1E8E04200007E370 /* WHDUserInfo.m */,
+				BCA6628E1E8E04720007E370 /* WHDUserOperation.h */,
+				BCA6628F1E8E04720007E370 /* WHDUserOperation.m */,
+				BCA662911E8E04840007E370 /* WHDLoginService.h */,
+				BCA662921E8E04840007E370 /* WHDLoginService.m */,
+				BCA662941E8E049D0007E370 /* WHDLearningService.h */,
+				BCA662951E8E049D0007E370 /* WHDLearningService.m */,
+			);
+			path = "iOS LMS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCA6627D1E8E03DA0007E370 /* iOS LMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA662851E8E03DA0007E370 /* Build configuration list for PBXNativeTarget "iOS LMS" */;
+			buildPhases = (
+				BCA6627A1E8E03DA0007E370 /* Sources */,
+				BCA6627B1E8E03DA0007E370 /* Frameworks */,
+				BCA6627C1E8E03DA0007E370 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS LMS";
+			productName = "iOS LMS";
+			productReference = BCA6627E1E8E03DA0007E370 /* iOS LMS */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCA662761E8E03DA0007E370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = unimelb;
+				TargetAttributes = {
+					BCA6627D1E8E03DA0007E370 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UFCM2756LW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCA662791E8E03DA0007E370 /* Build configuration list for PBXProject "iOS LMS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCA662751E8E03DA0007E370;
+			productRefGroup = BCA6627F1E8E03DA0007E370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCA6627D1E8E03DA0007E370 /* iOS LMS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCA6627A1E8E03DA0007E370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA662961E8E049D0007E370 /* WHDLearningService.m in Sources */,
+				BCA6629A1E8E07F90007E370 /* WHDLearningManagementSystem.m in Sources */,
+				BCA6628D1E8E04200007E370 /* WHDUserInfo.m in Sources */,
+				BCA662931E8E04840007E370 /* WHDLoginService.m in Sources */,
+				BCA662901E8E04720007E370 /* WHDUserOperation.m in Sources */,
+				BCA662821E8E03DA0007E370 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BCA662831E8E03DA0007E370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BCA662841E8E03DA0007E370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BCA662861E8E03DA0007E370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UFCM2756LW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCA662871E8E03DA0007E370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UFCM2756LW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCA662791E8E03DA0007E370 /* Build configuration list for PBXProject "iOS LMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA662831E8E03DA0007E370 /* Debug */,
+				BCA662841E8E03DA0007E370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA662851E8E03DA0007E370 /* Build configuration list for PBXNativeTarget "iOS LMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA662861E8E03DA0007E370 /* Debug */,
+				BCA662871E8E03DA0007E370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCA662761E8E03DA0007E370 /* Project object */;
+}

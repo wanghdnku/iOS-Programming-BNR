@@ -14,6 +14,7 @@
 		BCA662D31E8E39B40007E370 /* BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA662D21E8E39B40007E370 /* BNRItemsViewController.m */; };
 		BCA662D61E8E3C840007E370 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA662D51E8E3C840007E370 /* BNRItem.m */; };
 		BCA662D91E8E3D240007E370 /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA662D81E8E3D240007E370 /* BNRItemStore.m */; };
+		BCA662DB1E8E50340007E370 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA662DA1E8E50340007E370 /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BCA662D51E8E3C840007E370 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		BCA662D71E8E3D240007E370 /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
 		BCA662D81E8E3D240007E370 /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
+		BCA662DA1E8E50340007E370 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				BCA662D51E8E3C840007E370 /* BNRItem.m */,
 				BCA662D11E8E39B40007E370 /* BNRItemsViewController.h */,
 				BCA662D21E8E39B40007E370 /* BNRItemsViewController.m */,
+				BCA662DA1E8E50340007E370 /* HeaderView.xib */,
 				BCA662D71E8E3D240007E370 /* BNRItemStore.h */,
 				BCA662D81E8E3D240007E370 /* BNRItemStore.m */,
 			);
@@ -147,6 +150,7 @@
 			files = (
 				BCA662CA1E8E38BD0007E370 /* LaunchScreen.storyboard in Resources */,
 				BCA662C71E8E38BD0007E370 /* Assets.xcassets in Resources */,
+				BCA662DB1E8E50340007E370 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

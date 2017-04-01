@@ -80,6 +80,7 @@
 }
 
 #pragma mark headerView的操作
+
 - (IBAction)addNewItem:(id)sender {
     BNRItem *newItem = [[BNRItemStore sharedStore] createitem];
     NSInteger lastRow = [[[BNRItemStore sharedStore] allItems] indexOfObject:newItem];

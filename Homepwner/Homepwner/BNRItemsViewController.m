@@ -12,7 +12,7 @@
 
 @interface BNRItemsViewController () 
 
-@property (nonatomic, strong) IBOutlet UIView *headerView;
+// @property (nonatomic, strong) IBOutlet UIView *headerView;
 
 @end
 
@@ -24,6 +24,13 @@
 //        for (int i = 0; i < 5; i++) {
 //            [[BNRItemStore sharedStore] createitem];
 //        }
+        UINavigationItem *naviItem = self.navigationItem;
+        naviItem.title = @"Homepwner";
+        
+        // 为UINavigationBar设置BarButtonView
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem:)];
+        naviItem.rightBarButtonItem = bbi;
+        naviItem.leftBarButtonItem = self.editButtonItem;
     }
     
     return self;
@@ -38,9 +45,16 @@
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
-    UIView *header = self.headerView;
-    [self.tableView setTableHeaderView:header];
+    // UIView *header = self.headerView;
+    // [self.tableView setTableHeaderView:header];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
+#pragma mark tableView DataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[[BNRItemStore sharedStore] allItems] count];
@@ -69,9 +83,6 @@
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        return NO;
-    }
     return YES;
 }
 
@@ -79,7 +90,20 @@
     [[BNRItemStore sharedStore] moveItemAtIndex:sourceIndexPath.row toIndex:destinationIndexPath.row];
 }
 
+#pragma mark tableView Delegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BNRDetailViewController *detailViewController = [[BNRDetailViewController alloc] init];
+    NSArray *items = [[BNRItemStore sharedStore] allItems];
+    BNRItem *selectedItem = items[indexPath.row];
+    detailViewController.item = selectedItem;
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
+}
+
+
 #pragma mark headerView的操作
+
 
 - (IBAction)addNewItem:(id)sender {
     BNRItem *newItem = [[BNRItemStore sharedStore] createitem];
@@ -88,6 +112,8 @@
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
 }
 
+/*
+ 
 - (IBAction)toggleEditingMode:(id)sender {
     if (self.isEditing) {
         [sender setTitle:@"Edit" forState:UIControlStateNormal];
@@ -104,5 +130,7 @@
     }
     return _headerView;
 }
+
+*/
 
 @end

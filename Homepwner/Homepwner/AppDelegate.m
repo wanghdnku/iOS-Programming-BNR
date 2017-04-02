@@ -19,8 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // 创建一个ItemsViewController
     BNRItemsViewController *itemsViewController = [[BNRItemsViewController alloc] init];
-    self.window.rootViewController = itemsViewController;
+    // 创建一个UINavigationController，并把ItemsVC设为根
+    UINavigationController *naviController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
+    // 将naviCV设为UIWindow的根
+    self.window.rootViewController = naviController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     

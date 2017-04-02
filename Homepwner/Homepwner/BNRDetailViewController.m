@@ -31,6 +31,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     BNRItem *item = self.item;
+    NSLog(@"%p", self.item);
     self.nameField.text = item.itemName;
     self.serialNumberField.text = item.serialNumber;
     self.valueField.text = [NSString stringWithFormat:@"%d", item.valueInDollars];
@@ -56,10 +57,11 @@
     item.valueInDollars = [self.valueField.text intValue];
 }
 
-- (IBAction)valueConfirmed:(UIButton *)sender {
-    NSLog(@"Hello?");
+// 中级练习：关闭键盘
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.valueField resignFirstResponder];
+    [self.nameField resignFirstResponder];
+    [self.serialNumberField resignFirstResponder];
 }
-
 
 @end
